@@ -1,14 +1,15 @@
 let todos = ['Laundry', 'Dishes', 'Clean Desk', 'Sweep Floor'];
 
 function markAsDone(todos) {
-    while (todos < 5){
-    todos ++;
-    todos[i] = 'done - ' + todos[i];
+    let i = 0;
+    while (i < todos.length){
+    todos[i] = "done - " + todos[i];
+    i++;
  }
- return todos;
+ return todos.join('<br>');
 }
 
 document.getElementById('result').innerHTML = markAsDone(todos);
 
-//should create a function named markAsDone that takes an array of todos and returns the modified array
+
 //should loop through the todos, using a while loop, and prepend the string 'done - ' to each todo description
